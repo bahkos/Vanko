@@ -56,11 +56,11 @@ class Training4 {
   public static double getTheSecondGreatestNumber(double[] numbers){ 
 	  double secondGreatestNumber = numbers[8]; 
 	   return secondGreatestNumber; 
-	  }
+  }
 	 
 	 
   public static double getTheSecondsecondSmallestNumber(double[] numbers){ 
 	   double secondSmallestNumber = numbers[1];
 	    return secondSmallestNumber; 
-	  } 
+  } 
 }
