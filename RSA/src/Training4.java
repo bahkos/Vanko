@@ -74,8 +74,8 @@ class Training4 {
 	  }
 	 
 	 
-	  public static double getTheSecondsecondSmallestNumber(double[] array){ 
-		  double secondSmallestNumber = array[1]; 
+  public static double getTheSecondsecondSmallestNumber(double[] array){ 
+	   double secondSmallestNumber = array[1]; 
 	    for(int i=1;i < array.length;i++){ 
 	      if(array[i] < secondSmallestNumber){ 
 	        secondSmallestNumber = array[i]; 
