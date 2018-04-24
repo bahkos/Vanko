@@ -54,13 +54,13 @@ class Training4 {
  
  
   public static double getThesecondSmallestNumber(double[] array){ 
-	  double minValue = array[0]; 
+	  double secondSmallestNumber = array[0]; 
     for(int i=1;i<array.length;i++){ 
-      if(array[i] < minValue){ 
-        minValue = array[i]; 
+      if(array[i] < secondSmallestNumber){ 
+        secondSmallestNumber = array[i]; 
       } 
     } 
-    return minValue; 
+    return secondSmallestNumber; 
     
   } 
   public static double getTheSecondGreatestNumber(double[] array){ 
