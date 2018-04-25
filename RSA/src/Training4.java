@@ -27,7 +27,7 @@ class Training4 {
     System.out.println("Greatest Number is: "+max);
  
     
-    double min = getThesecondSmallestNumber(numbers);
+    double min = getTheSmallestNumber(numbers);
     System.out.println("Smallest Number is: "+min);
     
     double max1 = getTheSecondGreatestNumber(numbers);
@@ -42,45 +42,50 @@ class Training4 {
   }
  
   
-  public static double getTheGreatestNumber(double[] array){ 
-    double greatestNumber = array[0]; 
-    for(int i=1;i < array.length;i++){ 
-      if(array[i] > greatestNumber){ 
-         greatestNumber = array[i]; 
-      } 
-    } 
-    return greatestNumber; 
+  public static double getTheGreatestNumber(double[] numbers){ 
+   if(numbers[9] > numbers[0])
+   {
+	  double greatestNumber = numbers[9];
+	  return greatestNumber; 
+   } else {
+	   double greatestNumber = numbers[0];
+	   return greatestNumber; 
+   }
+    
   }
  
  
-  public static double getThesecondSmallestNumber(double[] array){ 
-	  double secondSmallestNumber = array[0]; 
-    for(int i=1;i<array.length;i++){ 
-      if(array[i] < secondSmallestNumber){ 
-        secondSmallestNumber = array[i]; 
-      } 
-    } 
-    return secondSmallestNumber; 
+  public static double getTheSmallestNumber(double[] numbers){ 
+	  if(numbers[9] < numbers[0])
+	   {
+		  double smallestNumber = numbers[9];
+		  return smallestNumber; 
+	   } else {
+		   double smallestNumber = numbers[0];
+		   return smallestNumber; 
+	   } 
     
   } 
-  public static double getTheSecondGreatestNumber(double[] array){ 
-	  double secondGreatestNumber = array[0]; 
-	    for(int i=1;i < array.length - 1;i++){ 
-	      if(array[i] > secondGreatestNumber){ 
-	         secondGreatestNumber = array[i]; 
-	      } 
-	    } 
-	    return secondGreatestNumber; 
-	  }
+  public static double getTheSecondGreatestNumber(double[] numbers){ 
+	  if(numbers[8] > numbers[1])
+	   {
+		  double secondGreatestNumber = numbers[8];
+		  return secondGreatestNumber; 
+	   } else {
+		   double secondGreatestNumber = numbers[1];
+		   return secondGreatestNumber; 
+	   } 
+  }
 	 
 	 
-  public static double getTheSecondsecondSmallestNumber(double[] array){ 
-	   double secondSmallestNumber = array[1]; 
-	    for(int i=1;i < array.length;i++){ 
-	      if(array[i] < secondSmallestNumber){ 
-	        secondSmallestNumber = array[i]; 
-	      } 
-	    } 
-	    return secondSmallestNumber; 
-	  } 
+  public static double getTheSecondsecondSmallestNumber(double[] numbers){ 
+	  if(numbers[8] < numbers[1])
+	   {
+		  double secondSmallestNumber = numbers[8];
+		  return secondSmallestNumber; 
+	   } else {
+		   double secondSmallestNumber = numbers[1];
+		   return secondSmallestNumber; 
+	   } 
+} 
 }
