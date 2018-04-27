@@ -10,13 +10,17 @@ public class Circle implements Shape {
     public Circle(double radius) {
         this.radius = radius;
     }
+    
+    public String getShapeName() {
+        return "Circle";
+    }
 
     
-    public double area() {        
+    public double getShapeSurface() {        
         return pi * Math.pow(radius, 2);
     }
 
-    public double perimeter() {
+    public double getShapePerimeter() {
         return 2 * pi * radius;
     }
 }

@@ -2,7 +2,10 @@ package oop;
 
 public interface Shape {
 	
-	public double area();
 
-	public double perimeter();
+	public String getShapeName();
+	
+	public double getShapeSurface();
+	
+	public double getShapePerimeter();
 }

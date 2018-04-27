@@ -11,13 +11,16 @@ public class Rectangle implements Shape {
         this.height = height;
     }
 
+    public String getShapeName() {
+        return "Rectangle";
+    }
     
-    public double area() {
+    public double getShapeSurface() {
         return width * height;
     }
 
     
-    public double perimeter() {
+    public double getShapePerimeter() {
         return 2 * (width + height);
     }
 

@@ -12,16 +12,20 @@ public class Triangle implements Shape {
 		this.b = b;
 		this.c = c;
 	}
+	
+	public String getShapeName() {
+        return "Triangle";
+    }
 
 
-	public double area() {
+	public double getShapeSurface() {
 
 		double s = (a + b + c) / 2;
 		return Math.sqrt(s * (s - a) * (s - b) * (s - c));
 	}
 
 	
-	public double perimeter() {
+	public double getShapePerimeter() {
 		return a + b + c;
 	}
 }
